@@ -1,0 +1,124 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size:5em ;
+}
+#s1 { 
+   text-align: center
+   
+}
+#result {
+    text-align: center;
+    font-size: 3em ;
+}
+
+#birth-date{
+    font-size: 2em ;
+}
+#s3 {
+    font-size: 2.5em ;
+}
+#calculate {
+    
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+  font-family: arial;
+  color: rgb(175, 103, 16);
+}
+
+/* Let's style the btn in such away that, 
+it should always be at the center of the browser and style the btn */
+.btn{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+    border: 5px solid #f2bb78;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Style the p tag */
+.btn p{
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;
+   font-weight: 900;
+   font-size: 15px;
+   margin-left: 30px;
+   transition: all 0.5s ease;
+}
+
+/* Style the first icon with class send */
+.send{
+  position: absolute;
+  top:15px;
+  left: 30px;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+/* Style the second icon with class send2 */
+.send2{
+  position: absolute;
+  top:80px;
+  left: 30px;
+  color: #696666;
+  transition: all 0.5s ease;
+}
+
+
+/* Hover effects */
+.btn:hover{
+  background: #e29e30;
+  transition: all 0.5s ease;
+}
+
+.btn:hover p{
+  color: #696666;
+  transition: all 0.5s ease;
+  animation: move 1s linear 1s forwards;
+}
+
+.btn:hover .send{
+  top: -50px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover .send2{
+  top: 15px;
+  transition: all 0.5s ease;
+  animation: sending 1s linear 1s forwards;
+}
+
+
+/* CSS3 animation keyframes */
+@keyframes sending{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translate(40px, -60px);
+  }
+}
+
+@keyframes move{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-18px);
+  }
+}
